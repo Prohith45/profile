@@ -1,0 +1,167 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --bg-dark: #050505;
+  --bg-card: rgba(255, 255, 255, 0.04);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --cyan-accent: #00f3ff;
+  --blue-accent: #0070F3;
+  --copper-accent: #ff9d00;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom Futuristic Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+  border-left: 1px solid rgba(0, 243, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0070F3, #00f3ff);
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #7928CA, #FF0080);
+}
+
+/* PCB Cyber Grid Background */
+.pcb-grid-bg {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Radial Glow Effects */
+.glow-orb-cyan {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(0, 243, 255, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(40px);
+}
+
+.glow-orb-purple {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(121, 40, 202, 0.12) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(50px);
+}
+
+/* Glassmorphism Cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 243, 255, 0.3);
+  box-shadow: 0 10px 40px -10px rgba(0, 243, 255, 0.25);
+}
+
+.glass-card-interactive {
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card-interactive::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  transition: left 0.6s ease;
+}
+
+.glass-card-interactive:hover::before {
+  left: 100%;
+}
+
+/* Animated PCB Circuit Trace SVG Lines */
+.circuit-trace-animated {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: drawTrace 4s ease-in-out forwards;
+}
+
+@keyframes drawTrace {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Glowing PCB Nodes */
+.pcb-node {
+  animation: pulseNode 2s infinite alternate;
+}
+
+@keyframes pulseNode {
+  0% {
+    r: 3;
+    fill: #00f3ff;
+    filter: drop-shadow(0 0 4px #00f3ff);
+  }
+  100% {
+    r: 5;
+    fill: #0070F3;
+    filter: drop-shadow(0 0 10px #00f3ff);
+  }
+}
+
+/* Text Gradients */
+.text-gradient-cyan-blue {
+  background: linear-gradient(135deg, #00f3ff 0%, #0070F3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple-pink {
+  background: linear-gradient(135deg, #7928CA 0%, #FF0080 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-copper {
+  background: linear-gradient(135deg, #ff9d00 0%, #e6ad00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

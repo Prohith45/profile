@@ -1,0 +1,101 @@
+ROHITH PAPANA
+
+Phone: 8309943166
+Email: papanarohith45@gmail.com
+
+Location: Andhra Pradesh, India
+
+OBJECTIVE
+To gain practical experience in a real working environment where I can apply my knowledge of electronics, embedded systems, PCB design, and programming, while continuously learning and contributing to organizational growth.
+
+EDUCATION
+Bachelor of Technology (B.Tech) – Electronics & Communication Engineering
+Prasad V. Potluri Siddhartha Institute of Technology (PVPSIT), Autonomous, affiliated to JNTUK
+Pursuing
+
+Diploma – Electronics & Communication Engineering (ECE)
+Dhanekula Institute of Engineering and Technology
+SBTET | 2025
+Percentage: 97%
+
+SSC (10th Class)
+SLM Chaithanya High School
+SSC | 2022
+Percentage: 84%
+
+TECHNICAL SKILLS
+Programming: C, Python
+
+Embedded Systems: Arduino, Raspberry Pi
+
+Electronics & Hardware:
+Circuit design and analysis
+Assembly and soldering
+Troubleshooting and testing
+Prototyping
+
+PCB Design:
+Schematic design
+PCB layout and routing
+Fabrication using copper-clad boards
+Design of motor drivers and PWM controllers
+
+INTERNSHIP EXPERIENCE
+Avishkaran Industry Pvt. Ltd., Hyderabad
+Intern – Bluetooth Device Manufacturing
+
+Assembled and tested Bluetooth devices such as sound bars, mini speakers, TWS earbuds, and neckbands
+Gained hands-on experience with electronic components and consumer electronics manufacturing
+Learned quality control processes and production workflows
+
+PROJECTS
+
+IoT-Based Audio Announcement System (Diploma Final Year Project)
+Developed an IoT-based system using Raspberry Pi Zero W2, MIT App Inventor, and Bluetooth speakers
+Enabled real-time voice announcements by converting text messages from a mobile app
+Implemented Flask server, Google Text-to-Speech (gTTS), and Bluetooth audio streaming
+Improved communication efficiency in institutional environments
+
+Automatic Writing Machine (Handwriting Replication System)
+Built a CNC-based system using stepper motors, CNC shield, and drivers
+Converts handwritten samples (A–Z, 0–9) into a custom font
+Integrated a web interface for uploading content
+Capable of writing notes and diagrams in personalized handwriting
+
+AI-Based Healthcare Assistance Robot
+Designed a smart healthcare robot for automated medicine dispensing and patient monitoring
+Dispenses medicines at scheduled times based on doctor prescriptions using a rotating medicine container system
+Uses a camera to identify medicines and provide information through visual recognition or call-based interaction
+Tracks patient movement and monitors presence using detection systems
+Integrated motors for movement, obstacle avoidance, and navigation
+Helps elderly and patients with timely medication and monitoring
+
+Bench Power Supply (Custom Built)
+Designed and built a variable bench power supply using SMPS and buck converter modules
+Provides adjustable voltage and current control
+Integrated display for real-time voltage monitoring
+Useful for testing and prototyping electronic circuits
+
+RF-Based Universal Remote (8-Channel)
+Developed an 8-channel wireless remote system using HT12E and HT12D encoder/decoder ICs
+Operates using a 433 MHz RF transmitter and receiver module
+Enables wireless control of multiple devices
+
+Custom PCB Design & Fabrication
+Designed and fabricated PCBs using copper-clad boards
+Built circuits such as H-Bridge MOSFET motor drivers and PWM speed controllers
+Gained hands-on experience in PCB etching, drilling, and testing
+
+AI Reel Generator
+Developed an AI-based system that generates and uploads short reels (1–2 minutes) from a single topic
+Automates content creation including script generation and media processing
+
+UPCOMING PROJECTS
+Jarvis AI Assistant
+Developing a voice-controlled AI assistant to operate mobile phone functions using voice commands
+
+HOBBIES & INTERESTS
+Exploring electronics, AI tools, and cybersecurity
+Building innovative electronic projects
+Gym and fitness training
+Gaming and outdoor sports
