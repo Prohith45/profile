@@ -21,19 +21,23 @@ export async function POST(req: Request) {
       );
     }
 
+    const emailUser = process.env.EMAIL_USER.trim();
+    const emailPass = process.env.EMAIL_PASS.replace(/\s+/g, '');
+    const emailTo = process.env.EMAIL_TO?.trim() || emailUser || 'papanarohith45@gmail.com';
+
     // Configure SMTP transporter for Gmail
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user: emailUser,
+        pass: emailPass,
       },
     });
 
     // Email options
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: 'papanarohith45@gmail.com', // Recipient
+      from: `"${name} (Portfolio)" <${emailUser}>`,
+      to: emailTo, // Recipient
       replyTo: email, // Set reply-to to the sender's email
       subject: `Portfolio Contact from ${name}`,
       text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
